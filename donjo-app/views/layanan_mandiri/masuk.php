@@ -89,7 +89,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="forms-container">
 			<div class="signin-signup">
 				<form class="sign-in-form" id="validasi" action="<?= $form_action; ?>" method="post">
-					<h2 class="title" style="text-align:center">Layanan Mandiri <br><?=ucwords($this->setting->sebutan_desa)?> <?=$header['nama_desa']?></h2>
+				    <a href="<?=site_url(); ?>" style="text-align: center"><img src="<?=gambar_desa($header['logo']);?>" alt="<?=$header['nama_desa']?>"
+						class="img-responsive" style="margin: auto" /></a>
+					<h2 class="title" style="text-align:center">Layanan Mandiri</h2>
 					<?php if ($this->session->mandiri_wait == 1): ?>
 						<div class="error login-footer-top">
 							<p id="countdown"></p>
@@ -123,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php endif; ?>
 							<div class="login-footer-top">
 								<?php if ($cek_anjungan): ?>
-									Tempelkan e-KTP Pada Card Reader
+									Tempel E-KTP di CardReader
 								<?php endif; ?>
 								<div class="thumbnail">
 									<img src="<?= base_url('assets/images/camera-scan.gif')?>" alt="scanner" class="center" style="width:100%">
@@ -137,7 +139,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php endif; ?>
 							<div class="input-field" style="<?= jecho($cek_anjungan == 0 || ENVIRONMENT == 'development', FALSE, 'width: 0; overflow: hidden;'); ?>">
 								<i class="fas fa-user"></i>
-								<input name="tag" id="tag" autocomplete="off" placeholder="Tempelkan e-KTP pada Card Reader" class="form-control required number" type="password" onkeypress="if (event.keyCode == 13){$('#'+'validasi').attr('action', '<?= $form_action; ?>');$('#'+'validasi').submit();}">
+								<input name="tag" id="tag" autocomplete="off" placeholder="Tempel E-KTP di CardReader" class="form-control required number" type="password" onkeypress="if (event.keyCode == 13){$('#'+'validasi').attr('action', '<?= $form_action; ?>');$('#'+'validasi').submit();}">
 							</div>
 							<a href="<?= site_url("layanan_mandiri/masuk")?>" class="btn solid link">MASUK DENGAN NIK
 							</a>
