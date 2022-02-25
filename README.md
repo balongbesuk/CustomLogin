@@ -12,6 +12,6 @@ Cukup Replace folder d masing masing urutan filenya jangan lupa backup dulu
 
 Terimakasih @dikisiswanto telah membantu merealisasikan 🤝
 
-Credit Theme para pembuat theme d luar sana, mohon maaf lupa 😰
+Credit Theme https://github.com/sefyudem/ 🤝
 
 Jika ada yang kurang cocok silakan bisa dikembangkan sendiri
