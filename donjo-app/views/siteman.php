@@ -84,7 +84,7 @@
 			<form id="validasi" class="login-form" action="<?=site_url('siteman/auth')?>" method="post">
 				<a href="<?=site_url(); ?>" style="text-align: center"><img src="<?=gambar_desa($header['logo']);?>" alt="<?=$header['nama_desa']?>"
 						class="img-responsive" style="margin: auto" /></a>
-				<h2 class="title">Login</h2>
+				<h2 class="title">Login Admin</h2>
 				<?php if ($this->session->siteman_wait == 1): ?>
 					<div class="error login-footer-top">
 						<p id="countdown" style="color:red; text-transform:uppercase"></p>
@@ -111,7 +111,7 @@
 						</div>
 					</div>
 					<label class="checkbox-label" for="checkbox">
-						<input type="checkbox" id="checkbox" class="form-checkbox"> Tampilkan kata sandi
+						<br><input type="checkbox" id="checkbox" class="form-checkbox"> Tampilkan kata sandi
 					</label>
 					<button type="submit" class="btn">Masuk</button>
 					<?php if ($this->session->siteman == -1 && $this->session->siteman_try < 4): ?>
@@ -127,7 +127,6 @@
 						</div>
 						<?php endif; ?>
 					<?php endif; ?>
-					<a href="https://github.com/OpenSID/OpenSID" target="_blank" style="text-align:center">OpenSID <?= substr(AmbilVersi(), 0, 11)?></a>
 				</form>
 		</div>
 	</div>
