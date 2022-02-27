@@ -57,10 +57,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			. get_dynamic_title_page_from_path();
 		?>
 	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="noindex">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<?php if (is_file(LOKASI_LOGO_DESA . "favicon.ico")): ?>
 		<link rel="shortcut icon" href="<?= base_url()?><?= LOKASI_LOGO_DESA?>favicon.ico" />
 	<?php else: ?>
@@ -165,7 +164,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						Sign in
 					</button>
 				</div>
-				<img src="img/register.svg" class="image" alt="" />
+				<!-- versi umum belum ada fitur register --> 
+			<!-- <img src="img/register.svg" class="image" alt="" /> -->
 			</div>
 		</div>
 	</div>
