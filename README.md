@@ -10,7 +10,7 @@ Cukup Replace folder d masing masing urutan filenya jangan lupa backup dulu
 
 # Credit
 
-Terimakasih @dikisiswanto telah membantu merealisasikan 🤝
+Terimakasih https://github.com/dikisiswanto telah membantu merealisasikan 🤝
 
 Credit Theme https://github.com/sefyudem/ 🤝
 
